@@ -38,23 +38,10 @@ function closeCurrentGame() {
 }
 
 // Puzzle Játék
-// JavaScript (script.js)
-function startGame(gameNumber) {
-    switch (gameNumber) {
-        case 1:
-            // Átirányítás a külső puzzle oldalra
-            window.location.href = "https://im-a-puzzle.com/share/f0f4f0ba7cc12cf";
-            break;
-        case 2:
-            startQuizGame();
-            break;
-        case 3:
-            startMemoryGame();
-            break;
-        // ... További játékok esetei
-        default:
-            alert("Játék indítása...");
-    }
+function startPuzzleGame() {
+    const puzzleContainer = document.createElement('div');
+    window.location.href = "https://im-a-puzzle.com/share/f0f4f0ba7cc12cf";
+    return puzzleContainer;
 }
 
 // Kérdések és Válaszok
